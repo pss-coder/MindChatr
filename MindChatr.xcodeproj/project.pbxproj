@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7222B0432A30E957009FBD7C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222B0422A30E957009FBD7C /* MessageView.swift */; };
+		7222B0452A30E977009FBD7C /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222B0442A30E977009FBD7C /* MessageBubble.swift */; };
+		7222B0472A30E984009FBD7C /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222B0462A30E984009FBD7C /* MessageField.swift */; };
+		7222B04A2A30EFD2009FBD7C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222B0492A30EFD2009FBD7C /* Message.swift */; };
+		7222B04C2A30F88F009FBD7C /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222B04B2A30F88F009FBD7C /* MessageModel.swift */; };
 		72339D7F2A2E321D00E2D969 /* MindChatrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72339D7E2A2E321D00E2D969 /* MindChatrApp.swift */; };
 		72339D812A2E321D00E2D969 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72339D802A2E321D00E2D969 /* ContentView.swift */; };
 		72339D832A2E321F00E2D969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72339D822A2E321F00E2D969 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7222B0422A30E957009FBD7C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		7222B0442A30E977009FBD7C /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		7222B0462A30E984009FBD7C /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		7222B0492A30EFD2009FBD7C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7222B04B2A30F88F009FBD7C /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		72339D7B2A2E321D00E2D969 /* MindChatr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindChatr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72339D7E2A2E321D00E2D969 /* MindChatrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindChatrApp.swift; sourceTree = "<group>"; };
 		72339D802A2E321D00E2D969 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7222B0412A30E947009FBD7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7222B0422A30E957009FBD7C /* MessageView.swift */,
+				7222B0442A30E977009FBD7C /* MessageBubble.swift */,
+				7222B0462A30E984009FBD7C /* MessageField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7222B0482A30EF1F009FBD7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7222B0492A30EFD2009FBD7C /* Message.swift */,
+				7222B04B2A30F88F009FBD7C /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		72339D722A2E321D00E2D969 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +82,8 @@
 			children = (
 				72339D7E2A2E321D00E2D969 /* MindChatrApp.swift */,
 				72339D802A2E321D00E2D969 /* ContentView.swift */,
+				7222B0482A30EF1F009FBD7C /* Model */,
+				7222B0412A30E947009FBD7C /* Views */,
 				72339D822A2E321F00E2D969 /* Assets.xcassets */,
 				72339D842A2E321F00E2D969 /* Preview Content */,
 			);
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				72339D812A2E321D00E2D969 /* ContentView.swift in Sources */,
+				7222B0432A30E957009FBD7C /* MessageView.swift in Sources */,
+				7222B04C2A30F88F009FBD7C /* MessageModel.swift in Sources */,
 				72339D7F2A2E321D00E2D969 /* MindChatrApp.swift in Sources */,
+				7222B04A2A30EFD2009FBD7C /* Message.swift in Sources */,
+				7222B0472A30E984009FBD7C /* MessageField.swift in Sources */,
+				7222B0452A30E977009FBD7C /* MessageBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
