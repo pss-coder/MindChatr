@@ -16,6 +16,19 @@
 		72339D812A2E321D00E2D969 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72339D802A2E321D00E2D969 /* ContentView.swift */; };
 		72339D832A2E321F00E2D969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72339D822A2E321F00E2D969 /* Assets.xcassets */; };
 		72339D862A2E321F00E2D969 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72339D852A2E321F00E2D969 /* Preview Assets.xcassets */; };
+		726F106B2A33609500658CB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F106A2A33609500658CB5 /* Constants.swift */; };
+		726F106D2A3360BB00658CB5 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F106C2A3360BB00658CB5 /* OpenAIService.swift */; };
+		726F10702A33652800658CB5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 726F106F2A33652800658CB5 /* Alamofire */; };
+		726F10722A35FDED00658CB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 726F10712A35FDED00658CB5 /* GoogleService-Info.plist */; };
+		726F10752A35FF6A00658CB5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 726F10742A35FF6A00658CB5 /* FirebaseFirestore */; };
+		726F10772A35FF6A00658CB5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 726F10762A35FF6A00658CB5 /* FirebaseFirestoreSwift */; };
+		726F10792A3738EE00658CB5 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F10782A3738EE00658CB5 /* Emotion.swift */; };
+		726F107D2A373BF600658CB5 /* EmotionTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F107C2A373BF600658CB5 /* EmotionTrackingView.swift */; };
+		726F107F2A373CE000658CB5 /* EmotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F107E2A373CE000658CB5 /* EmotionModel.swift */; };
+		726F10842A3742A400658CB5 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F10832A3742A400658CB5 /* DateExtension.swift */; };
+		726F10862A374C8200658CB5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F10852A374C8200658CB5 /* CalendarView.swift */; };
+		726F10882A3759F000658CB5 /* EmotionDayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F10872A3759F000658CB5 /* EmotionDayListView.swift */; };
+		726F108A2A375B0500658CB5 /* EmotionDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F10892A375B0500658CB5 /* EmotionDayRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +42,16 @@
 		72339D802A2E321D00E2D969 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72339D822A2E321F00E2D969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72339D852A2E321F00E2D969 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		726F106A2A33609500658CB5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		726F106C2A3360BB00658CB5 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		726F10712A35FDED00658CB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		726F10782A3738EE00658CB5 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		726F107C2A373BF600658CB5 /* EmotionTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionTrackingView.swift; sourceTree = "<group>"; };
+		726F107E2A373CE000658CB5 /* EmotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionModel.swift; sourceTree = "<group>"; };
+		726F10832A3742A400658CB5 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		726F10852A374C8200658CB5 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		726F10872A3759F000658CB5 /* EmotionDayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDayListView.swift; sourceTree = "<group>"; };
+		726F10892A375B0500658CB5 /* EmotionDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDayRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726F10702A33652800658CB5 /* Alamofire in Frameworks */,
+				726F10752A35FF6A00658CB5 /* FirebaseFirestore in Frameworks */,
+				726F10772A35FF6A00658CB5 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +71,8 @@
 		7222B0412A30E947009FBD7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7222B0422A30E957009FBD7C /* MessageView.swift */,
-				7222B0442A30E977009FBD7C /* MessageBubble.swift */,
-				7222B0462A30E984009FBD7C /* MessageField.swift */,
+				726F107B2A373BE300658CB5 /* EmotionTracking */,
+				726F107A2A373BD900658CB5 /* Message */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -56,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				7222B0492A30EFD2009FBD7C /* Message.swift */,
+				726F10782A3738EE00658CB5 /* Emotion.swift */,
+				726F107E2A373CE000658CB5 /* EmotionModel.swift */,
 				7222B04B2A30F88F009FBD7C /* MessageModel.swift */,
 			);
 			path = Model;
@@ -80,12 +107,16 @@
 		72339D7D2A2E321D00E2D969 /* MindChatr */ = {
 			isa = PBXGroup;
 			children = (
+				726F10822A37427A00658CB5 /* Extensions */,
+				726F10712A35FDED00658CB5 /* GoogleService-Info.plist */,
 				72339D7E2A2E321D00E2D969 /* MindChatrApp.swift */,
 				72339D802A2E321D00E2D969 /* ContentView.swift */,
 				7222B0482A30EF1F009FBD7C /* Model */,
 				7222B0412A30E947009FBD7C /* Views */,
 				72339D822A2E321F00E2D969 /* Assets.xcassets */,
 				72339D842A2E321F00E2D969 /* Preview Content */,
+				726F106A2A33609500658CB5 /* Constants.swift */,
+				726F106C2A3360BB00658CB5 /* OpenAIService.swift */,
 			);
 			path = MindChatr;
 			sourceTree = "<group>";
@@ -96,6 +127,35 @@
 				72339D852A2E321F00E2D969 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		726F107A2A373BD900658CB5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7222B0422A30E957009FBD7C /* MessageView.swift */,
+				7222B0442A30E977009FBD7C /* MessageBubble.swift */,
+				7222B0462A30E984009FBD7C /* MessageField.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		726F107B2A373BE300658CB5 /* EmotionTracking */ = {
+			isa = PBXGroup;
+			children = (
+				726F107C2A373BF600658CB5 /* EmotionTrackingView.swift */,
+				726F10852A374C8200658CB5 /* CalendarView.swift */,
+				726F10872A3759F000658CB5 /* EmotionDayListView.swift */,
+				726F10892A375B0500658CB5 /* EmotionDayRow.swift */,
+			);
+			path = EmotionTracking;
+			sourceTree = "<group>";
+		};
+		726F10822A37427A00658CB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				726F10832A3742A400658CB5 /* DateExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +174,11 @@
 			dependencies = (
 			);
 			name = MindChatr;
+			packageProductDependencies = (
+				726F106F2A33652800658CB5 /* Alamofire */,
+				726F10742A35FF6A00658CB5 /* FirebaseFirestore */,
+				726F10762A35FF6A00658CB5 /* FirebaseFirestoreSwift */,
+			);
 			productName = MindChatr;
 			productReference = 72339D7B2A2E321D00E2D969 /* MindChatr.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +207,10 @@
 				Base,
 			);
 			mainGroup = 72339D722A2E321D00E2D969;
+			packageReferences = (
+				726F106E2A33652800658CB5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				726F10732A35FF6A00658CB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 72339D7C2A2E321D00E2D969 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +227,7 @@
 			files = (
 				72339D862A2E321F00E2D969 /* Preview Assets.xcassets in Resources */,
 				72339D832A2E321F00E2D969 /* Assets.xcassets in Resources */,
+				726F10722A35FDED00658CB5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,12 +239,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				72339D812A2E321D00E2D969 /* ContentView.swift in Sources */,
+				726F10842A3742A400658CB5 /* DateExtension.swift in Sources */,
+				726F107F2A373CE000658CB5 /* EmotionModel.swift in Sources */,
+				726F10882A3759F000658CB5 /* EmotionDayListView.swift in Sources */,
+				726F10792A3738EE00658CB5 /* Emotion.swift in Sources */,
 				7222B0432A30E957009FBD7C /* MessageView.swift in Sources */,
 				7222B04C2A30F88F009FBD7C /* MessageModel.swift in Sources */,
 				72339D7F2A2E321D00E2D969 /* MindChatrApp.swift in Sources */,
 				7222B04A2A30EFD2009FBD7C /* Message.swift in Sources */,
+				726F10862A374C8200658CB5 /* CalendarView.swift in Sources */,
+				726F107D2A373BF600658CB5 /* EmotionTrackingView.swift in Sources */,
+				726F106D2A3360BB00658CB5 /* OpenAIService.swift in Sources */,
 				7222B0472A30E984009FBD7C /* MessageField.swift in Sources */,
 				7222B0452A30E977009FBD7C /* MessageBubble.swift in Sources */,
+				726F106B2A33609500658CB5 /* Constants.swift in Sources */,
+				726F108A2A375B0500658CB5 /* EmotionDayRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +454,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		726F106E2A33652800658CB5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		726F10732A35FF6A00658CB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		726F106F2A33652800658CB5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 726F106E2A33652800658CB5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		726F10742A35FF6A00658CB5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 726F10732A35FF6A00658CB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		726F10762A35FF6A00658CB5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 726F10732A35FF6A00658CB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72339D732A2E321D00E2D969 /* Project object */;
 }

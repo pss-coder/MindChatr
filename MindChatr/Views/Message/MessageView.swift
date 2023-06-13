@@ -13,20 +13,26 @@ struct MessageView: View {
     var body: some View {
         VStack {
             // List of chatbubbles
-            ScrollView {
-                ForEach(messages.messages, id: \.self) { text in
-                    MessageBubble(message: Message(id: "1", text: text, timestamp: Date(), isAI: true))
-                        .padding(.vertical, 5)
+            ScrollViewReader { proxy in
+                ScrollView {
+                    ForEach(messages.messages, id: \.id) { message in
+                        MessageBubble(message: message)
+                            .padding(.vertical, 5)
+                    }
+                }
+                .padding(.top)
+                // for scrolling down effect
+                .onChange(of: messages.messages[messages.messages.count - 1].id) { id in
+                    proxy.scrollTo(id, anchor: .bottom)
                 }
             }
-            .padding(.top)
             
             // ChatField
             MessageField()
 //                .border(Color.purple)
                 .overlay(
                             RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.black, lineWidth: 1)
+                                .stroke(Color("Black"), lineWidth: 1)
                         )
         }
         .padding()
@@ -42,3 +48,7 @@ struct MessageView_Previews: PreviewProvider {
             .environmentObject(MessageModel())
     }
 }
+
+// user sends emotion
+ // system detects emotion ( saves emotion of day )
+    // system responds to user

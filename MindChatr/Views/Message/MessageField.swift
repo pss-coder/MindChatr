@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MessageField: View {
     @EnvironmentObject var messages:MessageModel
+    @EnvironmentObject var emotionModel:EmotionModel
+    let openAIService = OpenAIService()
     
     @State private var message = ""
     
@@ -18,16 +20,26 @@ struct MessageField: View {
             
             Button {
                 
-                //TODO: send message to db
-                messages.addMessage(message: message)
+                // display message
+               
                 
+                // TODO: Emotion detection here
+                let feeling = predictFeeling(for: message)
+                //TODO: UPDATE FIELD
+                emotionModel.addEmotion(feelingString: message)
+                
+                // update firebase + UI
+                messages.addMessage(message: feeling.rawValue)
+                
+                
+                //openAIService.sendMessage(message: message)
                 //clear field
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
                     .padding(10)
-                    .background(Color(.blue))
+                    .background(Color("Pink"))
                     .cornerRadius(50)
                     
                     
@@ -48,6 +60,7 @@ struct MessageField_Previews: PreviewProvider {
     static var previews: some View {
         MessageField()
             .environmentObject(MessageModel())
+            .environmentObject(EmotionModel())
     }
 }
 

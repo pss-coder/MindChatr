@@ -16,8 +16,8 @@ struct MessageBubble: View {
             HStack {
                 Text(message.text)
                     .padding()
-                    .background(message.isAI ? Color(.lightGray) : Color(.blue))
-                    .foregroundColor(message.isAI ? .black : .white)
+                    .background(message.isAI ? Color(.lightGray).opacity(0.5) : Color("Pink"))
+                    .foregroundColor(message.isAI ? Color("Black") : .white)
                     .cornerRadius(30)
             }
             .frame(maxWidth: 300, alignment: message.isAI ? .leading : .trailing)
@@ -28,8 +28,8 @@ struct MessageBubble: View {
             if showTime {
                 Text("\(message.timestamp.formatted(date: .abbreviated, time: .standard))")
                     .font(.caption)
-                    .foregroundColor(.black)
-                    .padding(message.isAI ? .leading : .trailing, 25)
+                    .foregroundColor(Color("Black"))
+                    .padding(message.isAI ? .leading : .trailing, 20)
             }
         }
         .frame(maxWidth: .infinity, alignment: message.isAI ? .leading : .trailing)
@@ -40,6 +40,6 @@ struct MessageBubble: View {
 
 struct MessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        MessageBubble(message: Message(id: "1", text: "What is life? Life is something painful yet something you wish to never end. Weird right? ", timestamp: Date(), isAI: false))
+        MessageBubble(message: Message(id: "1", text: "What is life? Life is something painful yet something you wish to never end. Weird right? ", timestamp: Date(), isAI: true))
     }
 }
